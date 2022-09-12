@@ -8,19 +8,34 @@
 */
 int main(void)
 {
-int d;
-for (d = 0; d < 90; d++)
+int i;
+int j;
+i = 48;
+j = 49;
+while  ((i < 57) && (j < 58))
 {
-{
-putchar((d / 10) + '0');
-putchar((d % 10) + '0');
-}
-if (d != 89)
-{
-putchar(',');
-putchar(' ');
-}
-}
+putchar(i);
+putchar(j);
+if ((i == 56) && (j == 57))
+{  
 putchar('\n');
+i++;
+j++;
+}
+else
+{
+putchar(44);
+putchar(32);
+if (j < 57)
+{
+j++;
+}
+else
+{
+i++;
+j = 1 + i;
+}
+}
+}
 return (0);
 }
