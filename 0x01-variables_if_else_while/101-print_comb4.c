@@ -11,26 +11,38 @@ int main(void)
 int i = '0';
 int j = '0';
 int k = '0';
-while (i <= '7')
-{
-while (k <= '9')
-{
-if (i < j && j < k)
+i = 48;
+j = 49;
+k = 50;
+while  ((i < 56) && (j < 57) && (k < 58))
 {
 putchar(i);
 putchar(j);
 putchar(k);
-if (!(i == '7' && j == '8' && k == '9'))
+if ((i == 55 && (j == 56) && (k == 57))
 {
-putchar(',');
-putchar(' ');
-}
-}
+putchar('\n');
+i++;
+j++;
 k++;
 }
-j = '0';
-i++;
+else
+{
+putchar(44);
+putchar(32);
+if (k < 57)
+k++;
 }
-putchar('\n');
+else if ((j < 56) && (k == 57))
+{
+k = 1 + ++j;
+}
+else
+{
+j = 1 + ++i;
+k = 1 + j;
+}
+}
+}
 return (0);
 }
