@@ -8,9 +8,9 @@
 */
 int main(void)
 {
-int i = '0';
-int j = '0';
-int k = '0';
+int i =;
+int j =;
+int k =;
 i = 48;
 j = 49;
 k = 50;
