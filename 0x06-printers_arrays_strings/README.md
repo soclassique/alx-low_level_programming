@@ -1,1 +1,0 @@
-0x06-printers_arrays_strings
